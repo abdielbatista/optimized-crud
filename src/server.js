@@ -7,7 +7,7 @@ const cookieParser = require('cookie-parser')
 //passar dados para dominio
 const cors = require('cors')
 
-//require('./database')
+require('./database')
 
 //app recebe as funções da biblioteca express
 const app = express()

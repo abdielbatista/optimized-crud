@@ -1,9 +1,9 @@
 const express = require('express')
 
-//recebendo a função de rotas
+//recebendo a função
 const routes = express.Router();
 
-//requisição, reposta na rota
+//requisição, resposta
 routes.get('/', (req, res) => {
     res.send('Olá mundo')
 })
