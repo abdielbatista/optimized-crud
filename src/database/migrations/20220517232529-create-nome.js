@@ -13,7 +13,7 @@ module.exports = {
           type: Sequelize.STRING,
           allowNull: false
         },
-        senha:{
+        senha:{ 
           type: Sequelize.INTEGER,
           allowNull: false
         },
