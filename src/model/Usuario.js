@@ -5,6 +5,8 @@ class Usuario extends Model {
         super.init({
             nome: DataTypes.STRING,
             senha: DataTypes.STRING,
+        }, {
+            sequelize
         })
     }
 }
