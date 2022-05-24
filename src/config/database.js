@@ -6,7 +6,7 @@ module.exports ={
     password: '',
     database: 'backendMysql',
     define: {
-        timestamps: true,
+        timestamps: false,
         underscored: true
     }
 }
