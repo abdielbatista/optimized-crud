@@ -10,6 +10,8 @@ routes.get('/', (req, res) => {
 })
 
 routes.get('/usuario', UsuarioController.index)
+routes.get('/usuario/:id', UsuarioController.findById)
+
 
 //exportando rotas
 module.exports = routes;
