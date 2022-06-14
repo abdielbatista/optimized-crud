@@ -34,4 +34,16 @@ module.exports ={
         }); //lista todos os dados
         return res.json(usuario)
     },
+
+    async update(req, res){
+        const {id, nome, senha} = req.body;
+        const usuario = await Usuario.update({
+            nome, senha
+        }, {
+            where: {
+                id: id
+            }
+        }); 
+        return res.json(usuario)
+    }
 }
