@@ -15,5 +15,23 @@ module.exports ={
             }
         }); //lista todos os dados
         return res.json(usuario)
-    }
+    },
+
+    async store(req, res){
+        const {nome, senha} = req.body;
+        const usuario = await Usuario.create({
+            nome, senha
+        }); 
+        return res.json(usuario)
+    },
+
+    async delete(req, res){
+        const { id } = req.params;
+        const usuario = await Usuario.destroy({
+            where: {
+                id: id
+            }
+        }); //lista todos os dados
+        return res.json(usuario)
+    },
 }
