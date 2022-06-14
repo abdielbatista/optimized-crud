@@ -21,3 +21,9 @@
     yarn add mysql2 - bando de dados
     yarn add sequelize-cli -d
     yarn add nodemon - atualizar o servidor automático
+
+### Observações 
+
+    É necessário ter o XAMPP em execução especificamente o Apache e MySql
+    npm run dev inicia o servidor com o nodemon
+

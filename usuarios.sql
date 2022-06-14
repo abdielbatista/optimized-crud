@@ -1,0 +1,2 @@
+
+SELECT * FROM backendmysql.usuarios;
